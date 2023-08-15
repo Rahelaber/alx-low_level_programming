@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * main - prints the phrase" with proper grammar,
- * but the outcome is ap piece of art,
- * Returns:0 if successfuly,non-zero otherwise
+ * main - prints the phrase "with proper grammer,
+ * but the outcome is a piece of art,
+ * Returns: Always 0 (success)
  */
-void main(void)
+int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
