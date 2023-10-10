@@ -1,14 +1,15 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concatenates - get ends of value insert and add together for size
- * @s1: value one to concatenates
- * @s2: value two to concatenates
- * Return: concatenates of s1 and s2
+ * str_concat - conatenates two strings
+ * @s1: string to concatenate
+ * @s2: other string to concatenate
+ *
+ * Return:pointer to the new string created(succed)
  */
-char *str_concatenates(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
-	char *conctenates;
+	char *conct;
 	int i, ci;
 
 	if (s1 == NULL)
@@ -34,9 +35,10 @@ char *str_concatenates(char *s1, char *s2)
 
 	while (s2[ci] != '\0')
 	{
-		conctenates[i] = s2[ci];
+		conct[i] = s2[ci];
 		i++, ci++;
 	}
-	conctenates[i] = '\0';
-	return (conctenates);
+	conct[i] = '\0';
+	return (conct);
 }
+
